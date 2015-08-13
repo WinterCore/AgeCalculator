@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Polymer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" />
+	<script src="jQuery.js"></script>
+	<script src="Polymer/bower_components/webcomponentsjs/webcomponents.min.js"></script>
+	<link rel="stylesheet" href="main.css" />
+	<link href="Polymer/bower_components/paper-input/paper-input.html" rel="import" />
+</head>
+
+<body unresolved>
+	<div class="header">
+		<div class="mainContainer">
+			<div class="headerText">
+				<div>
+					Enter Your Birth Date
+				</div>
+			</div>
+			<div class="inputContainer">
+				<div class="dayContainer">
+					<paper-input label="Day" id="day" auto-validate pattern="[0-9]*" maxlength="2" class="inputs"></paper-input>
+				</div>
+				<div class="monthContainer">
+					<paper-input label="Month" id="month" auto-validate pattern="[0-9]*" maxlength="2" class="inputs"></paper-input>
+				</div>
+				<div class="yearContainer">
+					<paper-input label="Year" id="year" auto-validate pattern="[0-9]*" maxlength="4" class="inputs"></paper-input>
+				</div>
+				
+			</div>
+			<div class="button">
+				<paper-fab icon="arrow-forward">
+
+				</paper-fab>
+			</div>
+		</div>
+	</div>
+		<div class="center">
+			<div id="bDay"></div>
+			<div id="age"></div>
+			<div id="months"></div>
+			<div id="weeks"></div>
+			<div id="days"></div>
+			<div id="hours"></div>
+			<div id="minutes"></div>
+			<div id="seconds"></div>
+			<div id="remaining"></div>
+		</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

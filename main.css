@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.mainContainer {
+	width: 300px;
+	margin: 0 auto;
+}
+.dayContainer {
+	width: 25%;
+	display: inline-block;
+}
+.monthContainer {
+	width: 25%;
+	display: inline-block;
+}
+.yearContainer {
+	width: 47%;
+	display: inline-block;
+}
+.headerText {
+	text-align: center;
+	position: relative;
+}
+.headerText div {
+	position: absolute;
+	left: 45px;
+	font-size: 130%;
+	font-family: 'Roboto', 'Noto', sans-serif;
+	margin-top: 7px;
+	color: #3a29f9;
+	font-weight: bold;
+}
+.header {
+	width: 100%;
+	height: 95px;
+	background-color: #05FFAE;
+	box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+.inputContainer {
+	padding-top: 30px
+}
+.header .mainContainer::after {
+	opacity: 1;
+	content: "";
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	z-index: 1;
+	height: 6px;
+	bottom: -6px;
+	box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+}
+paper-button {
+	background-color: #4285f4;
+}
+.center {
+	display: none;
+	width: 300px;
+	padding-top: 20px;
+	padding-left: 3px;
+	padding-right: 3px;
+	font-size: 120%;
+	margin: 0 auto;
+	font-family: 'Roboto', 'Noto', sans-serif;
+	text-align: left;
+}
+.paper-input-container-0 .input-content.paper-input-container label, .paper-input-container-0 .input-content.paper-input-container .paper-input-label {
+	color: #00339A;
+}
+.paper-input-container-0 .unfocused-line.paper-input-container {
+	background: #00339A;
+}
+#bDay {
+	font-size: 110%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#bDay span {
+	color: firebrick;
+}
+#age {
+	font-size: 105%;
+	color: #006303;
+	margin-bottom: 15px
+}
+#months, #weeks, #days, #hours, #minutes, #seconds {
+	margin-left: 35px;
+}
+#remaining {
+	margin-top: 10px;
+	color: rgb(74, 0, 158);
+}
+#remaining div {
+	margin-left: 15px;
+}
