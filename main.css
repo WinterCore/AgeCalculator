@@ -42,7 +42,7 @@ body {
 	position: relative;
 }
 .inputContainer {
-	padding-top: 30px
+	padding-top: 10px
 }
 .header .mainContainer::after {
 	opacity: 1;
